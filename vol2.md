@@ -4,7 +4,7 @@ permalink: /vol2
 ﻿<html><head>
 <title>PICO-8 Cartridge</title>
 <meta name="viewport" content="width=device-width, user-scalable=no">
-<script type="text/javascript">
+<script type="text/javascript" scr="vol2.js">
 
 	// Default shell for PICO-8 0.2.6 (includes @weeble's gamepad mod 1.0)
 	
