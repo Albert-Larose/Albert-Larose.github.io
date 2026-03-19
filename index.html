@@ -66,3 +66,83 @@
             background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+        }
+
+        /* Grid & Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-primary);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: var(--accent-primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* PICO-8 Specific Card Accent */
+        .card-pico:hover {
+            border-color: var(--accent-secondary);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html" style="color: var(--text-main);">Home</a>
+            <a href="games/index.html">Games</a>
+            <a href="https://github.com/yourusername">GitHub</a>
+        </nav>
+
+        <header>
+            <h1>Albert's Portfolio</h1>
+            <p class="subtitle">Exploring the intersection of retro aesthetics and modern systems.</p>
+        </header>
+
+        <section class="grid">
+            <a href="games/index.html" class="card card-pico">
+                <h2>🕹️ PICO-8 Gallery</h2>
+                <p>A collection of bite-sized games, tech demos, and creative experiments built within the constraints of the 128x128 PICO-8 fantasy console.</p>
+            </a>
+
+            <a href="#" class="card">
+                <h2>💻 Software Projects</h2>
+                <p>Applications and full-stack tools ranging from hospital data portals to graphics programming experiments.</p>
+            </a>
+        </section>
+    </div>
+
+</body>
+</html>
