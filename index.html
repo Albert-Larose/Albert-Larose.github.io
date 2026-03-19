@@ -1,97 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pico-8 Projects</title>
-    <style>
-        :root {
-            --pico-black: #000000;
-            --pico-white: #FFF1E8;
-            --pico-blue: #29ADFF;
-            --pico-pink: #FF004D;
-        }
+<nav>
+    <a href="/index.html">Home</a>
+    <a href="/games/index.html">Games</a>
+    <a href="/projects/software/index.html">Code</a>
+</nav>
 
-        body {
-            background-color: #1a1a1a;
-            color: var(--pico-white);
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            border-bottom: 2px solid var(--pico-pink);
-            width: 100%;
-            max-width: 800px;
-        }
-
-        .arcade-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(640px, 1fr));
-            gap: 40px;
-            width: 100%;
-            max-width: 1300px;
-            justify-items: center;
-        }
-
-        .cartridge-card {
-            background: #222;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-            border: 1px solid #444;
-            transition: transform 0.2s ease;
-        }
-
-        .cartridge-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--pico-blue);
-        }
-
-        .game-title {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: var(--pico-blue);
-            text-transform: uppercase;
-        }
-
-        .controls-hint {
-            margin-top: 15px;
-            font-size: 0.8rem;
-            color: #888;
-            text-align: center;
-        }
-
-        iframe {
-            max-width: 100%;
-            border-radius: 4px;
-        }
-    </style>
-</head>
-<body>
+<div class="container">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="games/index.html">Games</a>
+    </nav>
 
     <header>
-        <h1>PICO-8 PROJECTS</h1>
+        <h1>Albert's Portfolio</h1>
+        <p class="subtitle">Exploring the intersection of retro aesthetics and modern systems.</p>
     </header>
 
-    <main class="arcade-grid">
-        <div class="cartridge-card">
-            <div class="game-title">Caroline</div>
-            <iframe src="https://www.lexaloffle.com/bbs/widget.php?pid=hokjijutu" 
-                    allowfullscreen 
-                    width="621" 
-                    height="621" 
-                    style="border:none; overflow:hidden"></iframe>
-            <div class="controls-hint">Arrows to Move • hold Z to view dances • hold X to dance • P to pause</div>
-        </div>
+    <section class="grid">
+        <a href="games/index.html" class="card">
+            <h2>🕹️ PICO-8 Gallery</h2>
+            <p>A collection of bite-sized games, tech demos, and creative experiments built within 128x128 pixels.</p>
+        </a>
 
-        </main>
-
-</body>
-</html>
+        <a href="projects/software.html" class="card">
+            <h2>💻 Software Projects</h2>
+            <p>Full-stack applications and tools ranging from database management to graphics programming.</p>
+        </a>
+    </section>
+</div>
